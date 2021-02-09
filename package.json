@@ -1,0 +1,16 @@
+{
+  "name": "vue-use",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vitepress-fc dev docs"
+  },
+  "dependencies": {
+    "vue": "^3.0.4",
+    "vue-demi": "^0.6.0"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.0.4",
+    "vite": "^1.0.0-rc.13",
+    "vitepress-for-component": "^0.11.16"
+  }
+}
