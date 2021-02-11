@@ -7,6 +7,10 @@ module.exports = {
   description: 'vue hooks',
   outDir: '../dist',
   base,
+  alias: {
+    // 把demo 文件引用指向正确地址
+    [`vue-use`]: resolve('./src')
+  },
   themeConfig: {
     lang: 'zh-CN',
     lastUpdated: '最近更新',
@@ -35,6 +39,14 @@ module.exports = {
               {
                 text: 'toggle',
                 link: '/hooks/use-toggle/'
+              },
+              {
+                text: 'useLocalStorageState',
+                link: '/hooks/use-local-storage-state/'
+              },
+              {
+                text: 'useSessionStorageState',
+                link: '/hooks/use-session-storage-state/'
               }
             ]
           }

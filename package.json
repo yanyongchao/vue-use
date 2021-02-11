@@ -5,8 +5,8 @@
     "dev": "vitepress-fc dev docs"
   },
   "dependencies": {
-    "vue": "^3.0.4",
-    "vue-demi": "^0.6.0"
+    "lodash": "^4.17.20",
+    "vue": "^3.0.4"
   },
   "devDependencies": {
     "@vue/compiler-sfc": "^3.0.4",
