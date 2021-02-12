@@ -1,7 +1,7 @@
 import { useDebounceFn } from 'vue-use'
 import { ref, watch, Ref } from 'vue'
 
-export interface DebounceOptions {
+interface DebounceOptions {
   wait?: number;
   leading?: boolean;
   trailing?: boolean;

@@ -43,6 +43,14 @@ module.exports = {
               {
                 text: 'useDebounceFn',
                 link: '/hooks/use-debounce-fn/'
+              },
+              {
+                text: 'useThrottle',
+                link: '/hooks/use-throttle/'
+              },
+              {
+                text: 'useThrottleFn',
+                link: '/hooks/use-throttle-fn/'
               }
             ]
           },

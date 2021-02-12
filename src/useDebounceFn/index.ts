@@ -1,6 +1,6 @@
 import debounce from 'lodash.debounce'
 
-export interface DebounceOptions {
+interface DebounceOptions {
   wait?: number;
   leading?: boolean;
   trailing?: boolean;

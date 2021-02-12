@@ -1,5 +1,5 @@
 <template>
-  <div class="use-">
+  <div class="use-debounce">
     <input v-model="value"
     placeholder="Typed value"
     style="width: 280px;">
@@ -12,7 +12,7 @@ import { defineComponent, ref } from 'vue'
 import { useDebounce } from 'vue-use'
 
 export default defineComponent({
-  name: 'LocalStorageState',
+  name: 'UseDebounce',
   setup () {
     const value = ref(0)
     const debouncedValue = useDebounce(value, {

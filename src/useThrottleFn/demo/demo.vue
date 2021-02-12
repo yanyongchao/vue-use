@@ -1,5 +1,5 @@
 <template>
-  <div class="use-debounce-fn">
+  <div class="use-throttle-fn">
     <p> Clicked count: {{count}} </p>
     <button type="button" @click="clickFn">
       Click fast!
@@ -9,18 +9,18 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
-import { useDebounceFn } from 'vue-use'
+import { useThrottleFn } from 'vue-use'
 
 export default defineComponent({
-  name: 'UseDebounceFn',
+  name: 'UseThrottleFn',
   setup () {
     const count = ref(0)
-    const { run: clickFn } = useDebounceFn(
+    const { run: clickFn } = useThrottleFn(
       () => {
         count.value++
       }, 
       {
-        wait: 500
+        wait: 1000
       }
     )
 
