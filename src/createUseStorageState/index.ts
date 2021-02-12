@@ -22,7 +22,9 @@ export function createUseStorageState<T = any>(
   const state = ref(getState()) as Ref<T>
 
   function setState() {
-    if (typeof state.value === 'object') {
+    if (state.value === undefined || state.value === null) {
+      window[storage].removeItem(key)
+    } else if (typeof state.value === 'object') {
       window[storage].setItem(key, JSON.stringify(state.value))
     } else {
       window[storage].setItem(key, state.value as any)

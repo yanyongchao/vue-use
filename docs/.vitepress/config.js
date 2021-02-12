@@ -41,6 +41,10 @@ module.exports = {
                 link: '/hooks/use-toggle/'
               },
               {
+                text: 'useCookieState',
+                link: '/hooks/use-cookie-state/'
+              },
+              {
                 text: 'useLocalStorageState',
                 link: '/hooks/use-local-storage-state/'
               },
