@@ -34,6 +34,19 @@ module.exports = {
             link: '/',
           },
           {
+            text: 'SideEffect',
+            children: [
+              {
+                text: 'useDebounce',
+                link: '/hooks/use-debounce/'
+              },
+              {
+                text: 'useDebounceFn',
+                link: '/hooks/use-debounce-fn/'
+              }
+            ]
+          },
+          {
             text: 'State',
             children: [
               {
@@ -51,7 +64,7 @@ module.exports = {
               {
                 text: 'useSessionStorageState',
                 link: '/hooks/use-session-storage-state/'
-              }
+              },
             ]
           }
         ]

@@ -1,13 +1,13 @@
 import Cookies from 'js-cookie'
 import { ref, Ref, watch } from 'vue'
-export type ICookieState = string | undefined | null;
-export type ICookieOptions = Cookies.CookieAttributes;
+export type CookieState = string | undefined | null;
+export type CookieOptions = Cookies.CookieAttributes;
 
-export interface IOptions extends ICookieOptions {
-  defaultValue?: ICookieState
+export interface Options extends CookieOptions {
+  defaultValue?: CookieState
 }
 
-export function useCookieState<T = ICookieState> (cookieKey: string, options: IOptions = {}) {
+export function useCookieState<T = CookieState> (cookieKey: string, options: Options = {}) {
   function getState() {
     const raw = Cookies.get(cookieKey)
     if (raw) {
