@@ -12,7 +12,7 @@ import { defineComponent, ref } from 'vue'
 import { useDebounceFn } from 'vue-use'
 
 export default defineComponent({
-  name: 'UseDebounceFn',
+  name: 'DebounceFn',
   setup () {
     const count = ref(0)
     const { run: clickFn } = useDebounceFn(

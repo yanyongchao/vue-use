@@ -12,7 +12,7 @@ import { defineComponent, ref } from 'vue'
 import { useThrottle } from 'vue-use'
 
 export default defineComponent({
-  name: 'UseThrottle',
+  name: 'Throttle',
   setup () {
     const value = ref(0)
     const throttledValue = useThrottle(value, {

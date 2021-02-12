@@ -12,7 +12,7 @@ import { defineComponent, ref } from 'vue'
 import { useDebounce } from 'vue-use'
 
 export default defineComponent({
-  name: 'UseDebounce',
+  name: 'Debounce',
   setup () {
     const value = ref(0)
     const debouncedValue = useDebounce(value, {

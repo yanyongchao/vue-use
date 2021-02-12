@@ -12,7 +12,7 @@ import { defineComponent, ref } from 'vue'
 import { useThrottleFn } from 'vue-use'
 
 export default defineComponent({
-  name: 'UseThrottleFn',
+  name: 'ThrottleFn',
   setup () {
     const count = ref(0)
     const { run: clickFn } = useThrottleFn(
