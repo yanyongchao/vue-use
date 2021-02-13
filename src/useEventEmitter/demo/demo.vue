@@ -19,6 +19,7 @@ export default defineComponent({
   },
   setup () {
     const event$ = useEventEmitter()
+
     const handleClick = () => {
       event$.emit('focus$')
     }

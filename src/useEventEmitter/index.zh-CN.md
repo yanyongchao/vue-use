@@ -5,7 +5,7 @@ map:
 
 # useLockFn
 
-用于给一个异步函数增加竞态锁，防止并发执行。
+在多个组件之间进行事件通知有时会让人非常头疼，借助 EventEmitter ，可以让这一过程变得更加简单。
 
 ## Examples
 
@@ -13,26 +13,21 @@ map:
 
 <demo src="./demo/demo.vue"
   language="vue"
-  title="防止重复提交"
-  desc="在 submit 函数执行完成前，其余的点击动作都会被忽略。">
+  title="父组件向子组件共享事件"
+  desc="父组件创建了一个 focus事件，并且将它传递给子组件">
 </demo>
 
 ## API
 
 ```typescript
-function useLockFn<P extends any[] = any[], V extends any = any>(
-  fn: (...args: P) => Promise<V>
-): fn: (...args: P) => Promise<V | undefined>
+const event$ = useEventEmitter();
 ```
 
-### Result
+### event$
 
-| 参数 | 说明                      | 类型                      |
+| 参数 | 说明                      | 形参                      |
 |------|---------------------------|---------------------------|
-| fn   | 增加了竞态锁的函数 | `(...args: any[]) => any` |
-
-### Params
-
-| 参数           | 说明             | 类型                      | 默认值 |
-|----------------|------------------|---------------------------|--------|
-| fn             | 需要增加竞态锁的函数 | `(...args: any[]) => any` | -      |
+| on   | 订阅事件 | `(eventName: string, cb: Function, once?: boolean)` |
+| once   | 订阅事件 | `(eventName: string, cb: Function)` |
+| emit   | 发布事件 | `(eventName: string, ...params?: any[])` |
+| off   | 取消事件订阅 | `(eventName: string, cb?: Function)` |
