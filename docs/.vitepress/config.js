@@ -51,6 +51,10 @@ module.exports = {
               {
                 text: 'useThrottleFn',
                 link: '/hooks/use-throttle-fn/'
+              },
+              {
+                text: 'usePolling',
+                link: '/hooks/use-polling/'
               }
             ]
           },

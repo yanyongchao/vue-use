@@ -1,5 +1,3 @@
-declare global {
-  interface AnyObject {
-    [propName: string]: any;
-  }
-};
+declare interface AnyObject {
+  [propName: string]: any;
+}

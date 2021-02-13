@@ -8,3 +8,4 @@ export * from './useThrottleFn';
 export * from './useThrottle';
 export * from './useLockFn';
 export * from './useEventEmitter';
+export * from './usePolling';
