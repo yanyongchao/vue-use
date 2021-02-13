@@ -1,5 +1,5 @@
 <template>
-  <div class="use-local-storage-state">
+  <div class="local-storage-state">
     <input 
       type="text"
       v-model="message"

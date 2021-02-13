@@ -1,5 +1,5 @@
 <template>
-  <div class="use-session-storage-state">
+  <div class="session-storage-state">
     <input 
       type="text"
       v-model="message"

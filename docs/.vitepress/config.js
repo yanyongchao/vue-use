@@ -58,7 +58,7 @@ module.exports = {
             text: 'State',
             children: [
               {
-                text: 'toggle',
+                text: 'useToggle',
                 link: '/hooks/use-toggle/'
               },
               {
@@ -73,6 +73,19 @@ module.exports = {
                 text: 'useSessionStorageState',
                 link: '/hooks/use-session-storage-state/'
               },
+            ]
+          },
+          {
+            text: 'Advanced',
+            children: [
+              {
+                text: 'useLockFn',
+                link: '/hooks/use-lock-fn/'
+              },
+              {
+                text: 'useEventEmitter',
+                link: '/hooks/use-event-emitter/'
+              }
             ]
           }
         ]

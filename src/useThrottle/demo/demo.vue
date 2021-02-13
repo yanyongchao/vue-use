@@ -1,5 +1,5 @@
 <template>
-  <div class="use-throttle">
+  <div class="throttle">
     <input v-model="value"
     placeholder="Typed value"
     style="width: 280px;">

@@ -1,5 +1,5 @@
 <template>
-  <div class="use-debounce-fn">
+  <div class="debounce-fn">
     <p> Clicked count: {{count}} </p>
     <button type="button" @click="clickFn">
       Click fast!

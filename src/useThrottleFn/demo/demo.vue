@@ -1,5 +1,5 @@
 <template>
-  <div class="use-throttle-fn">
+  <div class="throttle-fn">
     <p> Clicked count: {{count}} </p>
     <button type="button" @click="clickFn">
       Click fast!

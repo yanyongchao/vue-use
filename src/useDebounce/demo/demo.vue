@@ -1,5 +1,5 @@
 <template>
-  <div class="use-debounce">
+  <div class="debounce">
     <input v-model="value"
     placeholder="Typed value"
     style="width: 280px;">

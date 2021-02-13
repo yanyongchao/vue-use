@@ -1,5 +1,5 @@
 <template>
-  <div class="use-cookie-state">
+  <div class="cookie-state">
     <input 
       type="text"
       v-model="message"
