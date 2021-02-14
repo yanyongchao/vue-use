@@ -97,6 +97,10 @@ module.exports = {
               {
                 text: 'useHover',
                 link: '/hooks/use-hover/'
+              },
+              {
+                text: 'useSize',
+                link: '/hooks/use-size/'
               }
             ]
           },

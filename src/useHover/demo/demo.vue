@@ -1,11 +1,11 @@
 <template>
-  <span class="hover" ref="hoverDom">
+  <div class="hover" ref="hoverDom">
     {{isHover ? 'hover' : 'leaveHover'}}
-  </span>
+  </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue'
+import { defineComponent, ref, watch } from 'vue'
 import { useHover } from 'vue-use'
 
 export default defineComponent({
@@ -13,6 +13,10 @@ export default defineComponent({
   setup () {
     const hoverDom = ref(null)
     const isHover = useHover(hoverDom)
+
+    watch(hoverDom, (el, preElm, onInvalidate) => {
+      console.log(el, preElm, onInvalidate)
+    })
 
     return {
       isHover,

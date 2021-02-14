@@ -13,3 +13,4 @@ export * from './useEventListener';
 export * from './useRect';
 export * from './useClickAway';
 export * from './useHover';
+export * from './useSize';
