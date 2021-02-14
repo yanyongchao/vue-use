@@ -89,6 +89,10 @@ module.exports = {
               {
                 text: 'useRect',
                 link: '/hooks/use-rect/'
+              },
+              {
+                text: 'useClickAway',
+                link: '/hooks/use-click-away/'
               }
             ]
           },

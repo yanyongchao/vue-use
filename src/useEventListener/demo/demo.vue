@@ -12,7 +12,7 @@ export default defineComponent({
   name: 'EventListener',
   setup () {
     const count = ref(0)
-    const btnRef = ref(undefined)
+    const btnRef = ref(null)
     const handleClick = () => {
       count.value++
     }

@@ -22,7 +22,9 @@ map:
 ```typescript
 let polling = usePolling()
 let cancelPolling: Function = polling.startPolling({
-  cb: Function
+  cb: Function, // 轮询函数
+  time: number, // 轮询时间
+  isAsync: boolean // 是否是同步
 })
 ```
 
@@ -31,3 +33,8 @@ let cancelPolling: Function = polling.startPolling({
 | 参数 | 说明                      | 类型                      |
 |------|---------------------------|---------------------------|
 | startPolling   | 轮询开始函数 | `(time = 1000, cb, isAsync = true) => Function` |
+
+### cancelPolling
+| 参数 | 说明                      | 类型                      |
+|------|---------------------------|---------------------------|
+| cancelPolling   | 轮询结束函数 | `Function` |

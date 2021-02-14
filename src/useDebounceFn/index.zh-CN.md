@@ -22,11 +22,17 @@ map:
 ```typescript
 const {
   run,
-  cancel
+  cancel,
+  flush
 } = useDebounceFn(
   fn: (...args: any[]) => any,
-  options?: Options
+  options?: DebounceOptions
 );
+type DebounceOptions = {
+  wait?: number;
+  leading?: boolean;
+  trailing?: boolean;
+}
 ```
 
 ### Params

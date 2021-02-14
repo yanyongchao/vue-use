@@ -20,13 +20,16 @@ map:
 ## API
 
 ```typescript
-const {
-  run,
-  cancel
-} = useDebounce(
+const debouncedValue = useDebounce(
   value: any,
-  options?: Options
+  options?: DebounceOptions
 );
+
+type DebounceOptions = {
+  wait?: number;
+  leading?: boolean;
+  trailing?: boolean;
+}
 ```
 
 ### Params
@@ -44,3 +47,7 @@ const {
 | leading  | 是否在上升沿触发副作用函数 | `boolean` | `false` |
 | trailing | 是否在下降沿触发副作用函数 | `boolean` | `true`  |
 
+### Result
+| 参数     | 说明                       | 类型      | 默认值  |
+| -------- | -------------------------- | --------- | ------- |
+| debouncedValue | 防抖值 | `Ref<any>` | `-`  |

@@ -1,6 +1,6 @@
 import { getRandom } from '../utils/common'
 
-type PollingParams = {
+type PollingOptions = {
   time?: number
   cb: Function
   isAsync?: boolean
@@ -9,7 +9,7 @@ type PollingParams = {
 export function usePolling () {
   const timerObj: AnyObject = {}
 
-  const startPolling = ({ time = 1000, cb, isAsync = true }: PollingParams) => {
+  const startPolling = ({ time = 1000, cb, isAsync = true }: PollingOptions) => {
     if (!cb || !(cb instanceof Function)) {
       // cb为函数
       throw Error('cb is require and is a function')

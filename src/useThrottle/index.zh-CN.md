@@ -20,10 +20,7 @@ map:
 ## API
 
 ```typescript
-const {
-  run,
-  cancel
-} = useThrottleFn(
+const throttledValue = useThrottleFn(
   fn: (...args: any[]) => any,
   options?: Options
 );
@@ -43,3 +40,8 @@ const {
 | wait     | 超时时间，单位为毫秒       | `number`  | `1000`  |
 | leading  | 是否在上升沿触发副作用函数 | `boolean` | `false` |
 | trailing | 是否在下降沿触发副作用函数 | `boolean` | `true`  |
+
+### Result
+| 参数     | 说明                       | 类型      | 默认值  |
+| -------- | -------------------------- | --------- | ------- |
+| throttledValue | 防抖值 | `Ref<any>` | `-`  |

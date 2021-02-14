@@ -22,7 +22,8 @@ map:
 ```typescript
 const {
   run,
-  cancel
+  cancel,
+  flush
 } = useThrottleFn(
   fn: (...args: any[]) => any,
   options?: Options

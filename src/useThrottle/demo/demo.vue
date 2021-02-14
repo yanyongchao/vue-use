@@ -16,7 +16,7 @@ export default defineComponent({
   setup () {
     const value = ref(0)
     const throttledValue = useThrottle(value, {
-      wait: 5000
+      wait: 500
     })
     return {
       value,

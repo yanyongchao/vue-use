@@ -20,7 +20,7 @@ export default defineComponent({
         count.value++
       }, 
       {
-        wait: 1000
+        wait: 500
       }
     )
 

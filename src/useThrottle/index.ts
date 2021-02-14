@@ -7,8 +7,6 @@ interface ThrottleOptions {
   trailing?: boolean;
 }
 
-type Fn = (...args: any) => any;
-
 export function useThrottle<T> (targetValue: Ref<T>, options?: ThrottleOptions) {
   let throttledValue = ref(targetValue.value)
 

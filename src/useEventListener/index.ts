@@ -3,7 +3,7 @@ import { onMountedOrActivated } from '../onMountedOrActivated/'
 import { inBrowser } from '../utils/common'
 
 export type UseEventListenerOptions = {
-  target?: EventTarget | Ref<EventTarget | undefined>
+  target?: EventTarget | Ref<EventTarget | undefined | null>
   capture?: boolean
   passive?: boolean
   once?: boolean

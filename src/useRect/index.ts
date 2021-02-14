@@ -5,7 +5,7 @@ function isWindow(val: unknown): val is Window {
 }
 
 export const useRect = (
-  elementRef: (Element | Window) | Ref<Element | Window | undefined>
+  elementRef: (Element | Window) | Ref<Element | Window | undefined | null>
 ) => {
   const element = unref(elementRef)
 

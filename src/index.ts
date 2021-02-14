@@ -11,3 +11,4 @@ export * from './useEventEmitter';
 export * from './usePolling';
 export * from './useEventListener';
 export * from './useRect';
+export * from './useClickAway';
