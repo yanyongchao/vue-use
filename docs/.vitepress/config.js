@@ -80,6 +80,19 @@ module.exports = {
             ]
           },
           {
+            text: 'Dom',
+            children: [
+              {
+                text: 'useEventListener',
+                link: '/hooks/use-event-listener/'
+              },
+              {
+                text: 'useRect',
+                link: '/hooks/use-rect/'
+              }
+            ]
+          },
+          {
             text: 'Advanced',
             children: [
               {

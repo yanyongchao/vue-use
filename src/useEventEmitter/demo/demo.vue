@@ -13,7 +13,7 @@ import { useEventEmitter } from 'vue-use'
 import InputBox from './inputBox.vue'
 
 export default defineComponent({
-  name: 'Debounce',
+  name: 'EventEmitter',
   components: {
     InputBox
   },

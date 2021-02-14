@@ -5,6 +5,7 @@
     "dev": "vitepress-fc dev docs"
   },
   "dependencies": {
+    "ant-design-vue": "^2.0.0",
     "js-cookie": "^2.2.1",
     "lodash": "^4.17.20",
     "lodash.debounce": "^4.0.8",

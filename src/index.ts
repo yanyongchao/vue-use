@@ -9,3 +9,5 @@ export * from './useThrottle';
 export * from './useLockFn';
 export * from './useEventEmitter';
 export * from './usePolling';
+export * from './useEventListener';
+export * from './useRect';
