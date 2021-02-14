@@ -1,3 +1,4 @@
+import { onUnmounted, onDeactivated } from 'vue'
 import { getRandom } from '../utils/common'
 
 type PollingOptions = {
@@ -7,7 +8,7 @@ type PollingOptions = {
 }
 
 export function usePolling () {
-  const timerObj: AnyObject = {}
+  let timerObj: AnyObject = {}
 
   const startPolling = ({ time = 1000, cb, isAsync = true }: PollingOptions) => {
     if (!cb || !(cb instanceof Function)) {
@@ -44,6 +45,14 @@ export function usePolling () {
       delete timerObj[uniqueKey]
     }
   }
+
+  onUnmounted(() => {
+    timerObj = {}
+  })
+
+  onDeactivated(() => {
+    timerObj = {}
+  })
 
   return {
     startPolling

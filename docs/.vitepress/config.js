@@ -93,6 +93,10 @@ module.exports = {
               {
                 text: 'useClickAway',
                 link: '/hooks/use-click-away/'
+              },
+              {
+                text: 'useHover',
+                link: '/hooks/use-hover/'
               }
             ]
           },
