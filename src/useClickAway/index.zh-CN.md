@@ -21,7 +21,7 @@ map:
 
 ```typescript
 function useClickAway(
-  target: Element | Ref<Element | undefined | null>,
+  target: Element | Ref<Element | null>,
   listener: EventListener,
   options?: Options
 ): void;

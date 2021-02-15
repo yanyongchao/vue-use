@@ -27,7 +27,7 @@ const size = useSize(target)
 
 | 参数    | 说明                                         | 类型                   | 默认值 |
 |---------|----------------------------------------------|------------------------|--------|
-| target | DOM 节点或者 Refs  | `Element | Ref<Element | null | undefined>` | -      |
+| target | DOM 节点或者 Refs  | `HTMLElement | Ref<HTMLElement | null>` | -      |
 
 ### 结果
 

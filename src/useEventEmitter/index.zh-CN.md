@@ -23,11 +23,11 @@ map:
 const event$ = useEventEmitter();
 ```
 
-### event$
+### Result
 
 | 参数 | 说明                      | 形参                      |
 |------|---------------------------|---------------------------|
-| on   | 订阅事件 | `(eventName: string, cb: Function, once?: boolean)` |
-| once   | 订阅事件 | `(eventName: string, cb: Function)` |
-| emit   | 发布事件 | `(eventName: string, ...params?: any[])` |
-| off   | 取消事件订阅 | `(eventName: string, cb?: Function)` |
+| on   | 订阅事件 | `(eventName: string, cb: Function, once?: boolean): void` |
+| once   | 订阅事件 | `(eventName: string, cb: Function): void` |
+| emit   | 发布事件 | `(eventName: string, ...params?: any[]): void` |
+| off   | 取消事件订阅 | `(eventName: string, cb?: Function): void` |

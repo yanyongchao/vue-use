@@ -3,7 +3,7 @@ import { ref, watch, unref, Ref, reactive, onMounted, onUnmounted } from 'vue'
 
 type Size = { width?: number; height?: number };
 
-export function useSize (target: HTMLElement | Ref<HTMLElement | null | undefined>): Size {
+export function useSize (target: HTMLElement | Ref<HTMLElement | null>): Size {
   const elRef = ref(target)
   const state = reactive({
     width: ((unref(target) || {}) as HTMLElement).clientWidth,
