@@ -105,6 +105,10 @@ module.exports = {
               {
                 text: 'useScroll',
                 link: '/hooks/use-scroll/'
+              },
+              {
+                text: 'useInViewPort',
+                link: '/hooks/use-in-view-port/'
               }
             ]
           },

@@ -15,3 +15,4 @@ export * from './useClickAway';
 export * from './useHover';
 export * from './useSize';
 export * from './useScroll';
+export * from './useInViewport';

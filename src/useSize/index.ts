@@ -11,24 +11,24 @@ export function useSize (target: HTMLElement | Ref<HTMLElement | null>): Size {
   })
   let resizeObserver: ResizeObserver | null
 
-  onMounted(() => {
-    watch(
-      elRef,
-      (el) => {
-        resizeObserver && resizeObserver.disconnect();
+  watch(
+    elRef,
+    () => {
+      resizeObserver && resizeObserver.disconnect()
+      if (elRef.value) {
         resizeObserver = new ResizeObserver((entries: any[]) => {
           entries.forEach(entry => {
             state.width = entry.target.clientWidth;
             state.height = entry.target.clientHeight;
           });
         });
-        resizeObserver.observe(el as HTMLElement)
-      },
-      {
-        immediate: true
+        resizeObserver.observe(elRef.value as HTMLElement)
       }
-    )
-  })
+    },
+    {
+      immediate: true
+    }
+  )
 
   onUnmounted(() => {
     resizeObserver && resizeObserver.disconnect()

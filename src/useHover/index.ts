@@ -1,5 +1,5 @@
-import { useEventListener } from '../useEventListener'
 import { ref, Ref, unref } from 'vue'
+import { useEventListener } from '../useEventListener'
 
 export interface HoverOptions {
   onEnter?: () => void

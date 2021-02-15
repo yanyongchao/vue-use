@@ -1,5 +1,5 @@
-import { useDebounceFn } from 'vue-use'
 import { ref, watch, Ref } from 'vue'
+import { useDebounceFn } from '../useDebounceFn'
 
 interface DebounceOptions {
   wait?: number;

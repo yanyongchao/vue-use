@@ -1,5 +1,5 @@
 import { ref, Ref, watch } from 'vue'
-import { useThrottleFn } from 'vue-use'
+import { useThrottleFn } from '../useThrottleFn'
 
 interface ThrottleOptions {
   wait?: number;
