@@ -14,7 +14,7 @@ import { defineComponent } from 'vue'
 import { useSessionStorageState } from 'vue-use'
 
 export default defineComponent({
-  name: 'LocalStorageState',
+  name: 'SessionStorageState',
   setup () {
     const message = useSessionStorageState('user-message', 'Hello~')
 

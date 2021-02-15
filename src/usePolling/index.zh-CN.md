@@ -1,6 +1,6 @@
 ---
 map:
-  path: /hooks/use-polling
+  path: /hooks/use-polling/
 ---
 
 # usePolling

@@ -20,7 +20,7 @@ map:
 ## API
 
 ```typescript
-function useRect((Element | Window) | Ref<Element | Window | undefined>): DOMRect;
+function useRect((HTMLElement | Document | Window) | Ref<HTMLElement | Document | Window | null>): DOMRect;
 ```
 
 ### Result

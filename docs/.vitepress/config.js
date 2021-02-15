@@ -101,6 +101,10 @@ module.exports = {
               {
                 text: 'useSize',
                 link: '/hooks/use-size/'
+              },
+              {
+                text: 'useScroll',
+                link: '/hooks/use-scroll/'
               }
             ]
           },

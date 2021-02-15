@@ -35,5 +35,5 @@ const [state, toggle] = useToggle(
 
 | 参数    | 说明     | 类型      |
 | ------- | -------- | --------- |
-| state   | 状态值   | -         |
+| state   | 状态值   | `boolean`       |
 | toggle | 切换状态函数 | `Function` |

@@ -12,7 +12,7 @@ import { useRect } from 'vue-use'
 export default defineComponent({
   name: 'EventListener',
   setup () {
-    const btnRef = ref(undefined)
+    const btnRef = ref(null)
     const rect: Ref<any> = ref(null)
     const handleClick = () => {
       rect.value = useRect(btnRef)

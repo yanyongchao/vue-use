@@ -6,7 +6,7 @@ export interface HoverOptions {
   onLeave?: () => void
 }
 
-export function useHover (target: Element | Ref<Element | null | undefined>, options?: HoverOptions) {
+export function useHover (target: TargetElement | Ref<TargetElement | null>, options?: HoverOptions) {
   const { onEnter, onLeave } = options || {}
   const isHovering: Ref<boolean> = ref(false)
 

@@ -14,7 +14,7 @@ import { defineComponent } from 'vue'
 import { useCookieState } from 'vue-use'
 
 export default defineComponent({
-  name: 'LocalStorageState',
+  name: 'CookieState',
   setup () {
     const message = useCookieState('user-message', {
       defaultValue: 'Hello~'
