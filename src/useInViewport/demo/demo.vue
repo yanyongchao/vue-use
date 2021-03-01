@@ -1,7 +1,7 @@
 <template>
   <div class="hover">
-    <p>observer dom</p>
-    <div ref="visibleDom">{{isVisible ? 'visible' : 'hidden'}}</div>
+    <p ref="visibleDom">observer dom</p>
+    <div style="margin-top: 57px;">{{isVisible ? 'visible' : 'hidden'}}</div>
   </div>
 </template>
 
@@ -14,7 +14,7 @@ export default defineComponent({
   setup () {
     const visibleDom = ref(null)
     const isVisible = useInViewport(visibleDom)
-    
+
     return {
       isVisible,
       visibleDom

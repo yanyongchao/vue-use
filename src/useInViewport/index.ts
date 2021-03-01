@@ -11,7 +11,6 @@ export function useInViewport(target: HTMLElement | Ref<HTMLElement | null>): Re
       if (elRef.value) {
         intersectionObserver = new IntersectionObserver(entries => {
           for (const entry of entries) {
-            console.log('entry', entry)
             if (entry.isIntersecting) {
               inViewPort.value = true
             } else {

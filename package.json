@@ -2,7 +2,19 @@
   "name": "vue-use",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vitepress-fc dev docs"
+    "dev": "vitepress-fc dev docs",
+    "build": "vite build"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vue-use.umd.js",
+  "module": "./dist/vue-use.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-use.es.js",
+      "require": "./dist/vue-use.umd.js"
+    }
   },
   "dependencies": {
     "ant-design-vue": "^2.0.0",
@@ -17,8 +29,8 @@
     "@types/js-cookie": "^2.2.6",
     "@types/lodash.debounce": "^4.0.6",
     "@types/lodash.throttle": "^4.1.6",
-    "@vue/compiler-sfc": "^3.0.4",
-    "vite": "^1.0.0-rc.13",
+    "@vitejs/plugin-vue": "^1.1.4",
+    "vite": "^2.0.0-beta.59",
     "vitepress-for-component": "^0.11.16"
   }
 }
