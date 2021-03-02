@@ -14,7 +14,7 @@ module.exports = {
   themeConfig: {
     lang: 'zh-CN',
     lastUpdated: '最近更新',
-    repo: 'dewfall123/vue-use',
+    repo: 'yanyongchao/vue-use',
     repoLabel: 'Github',
     prevLink: true,
     nextLink: true,
